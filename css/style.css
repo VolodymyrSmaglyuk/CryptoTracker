@@ -1,0 +1,573 @@
+body {
+  margin: 1%;
+  background-color: #000000;
+}
+h1 {
+  color: white;
+  font-family: Ubuntu;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Home Page Styling */
+.world-map {
+  display: block;
+  margin-top: 20vh;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+.legalization {
+  color: #f3f3f3;
+  font-size: 19px;
+  font-family: garamond;
+  text-align: center;
+}
+
+/* Cryptocurrencies Page Styling */
+#table-header {
+  font-family: ubuntu;
+  margin-bottom: 2%;
+}
+#table {
+  height: 75vh; /* Максимальна висота таблиці */
+  overflow-y: scroll;
+  margin: 0 auto;
+  margin-bottom: 3%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+table {
+  width: 99%;
+  color: white;
+  margin: 0 auto;
+  overflow-x: auto;
+  background-color: #171717;
+  border-collapse: collapse;
+}
+table thead th {
+  top: 0;
+  height: 13vh;
+  position: sticky;
+  background-color: #171717;
+  border-collapse: collapse;
+  z-index: 9999;
+}
+thead {
+  position: sticky;
+  top: 0;
+  background: white;
+}
+.border {
+  height: 1px;
+  padding: 0;
+  background-color: white;
+}
+.head {
+  text-transform: uppercase;
+}
+th,
+td {
+  padding: 0.7%;
+  text-align: center;
+}
+.red {
+  color: rgb(245, 8, 8);
+}
+.green {
+  color: rgb(8, 161, 8);
+}
+table img {
+  width: 20%;
+}
+.main {
+  margin-top: 1%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  line-height: 1.5em;
+}
+
+/* Ukraine Page Styling */
+.heading {
+  text-transform: uppercase;
+}
+.ukraine-top,
+.ukraine-bottom {
+  width: 98%;
+  display: block;
+}
+.crypto_stat {
+  display: block;
+  width: 70%;
+}
+.ukraine-bottom .ukr_chart {
+  /* display: inline-block; */
+  width: 45%;
+  float: right;
+}
+.world_map {
+  display: inline-block;
+  width: 90%;
+  height: auto;
+}
+.ukraine-top .ukraine-map {
+  /* display: inline-block; */
+  width: 54%;
+  float: left;
+  height: 30vh;
+  margin: 2%;
+}
+.ukraine-top .text {
+  margin-top: 6%;
+  display: inline-block;
+  width: 40%;
+  padding: 10px;
+  color: #ffffff;
+}
+.ukraine-bottom .text {
+  display: inline-block;
+  margin: 10px;
+  width: 40%;
+  padding: 10px;
+  color: #ffffff;
+}
+.ukraine-bottom {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.ukraine-bottom .crypto_stat {
+  margin-top: 5%;
+  margin-left: 20%;
+  clear: both;
+}
+.ukraine-bottom .text {
+  margin-top: 10%;
+  width: 50%;
+}
+.text h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.text p {
+  margin: 0.5rem 0;
+  font-family: garamond;
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+/* Crypto Usage Page Styling */
+.usage {
+  color: #f3f3f3;
+}
+.usage h1 {
+  font-family: ubuntu;
+  text-transform: uppercase;
+}
+.usage article {
+  font-family: garamond;
+  font-size: 22px;
+}
+.images {
+  float: left;
+  margin-top: 8px;
+  width: 30%;
+}
+.images img {
+  display: block;
+  margin-top: 8%;
+  margin-left: 18%;
+  width: 70%;
+  height: auto;
+  border-image: linear-gradient(#ca27ff, #8200ff) 30;
+  border-width: 4px;
+  border-style: solid;
+}
+#concl {
+  margin-top: 5%;
+}
+.description ul {
+  display: inline-block;
+  width: 69%;
+}
+.description hr {
+  margin-top: 2%;
+  height: 3px;
+  border: none;
+  background: -webkit-linear-gradient(left, #ca27ff, #8200ff);
+}
+.description li {
+  font-size: large;
+  height: 20vh;
+  margin-top: 5%;
+  list-style-type: square;
+}
+#l3 {
+  margin-top: -1%;
+}
+#l5 {
+  margin-top: -1%;
+}
+.exchanges {
+  margin: 3%;
+  display: flex;
+  justify-content: space-around;
+}
+.exchanges a {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.exchanges a img {
+  height: 120px;
+  width: 120px;
+  margin-top: 10%;
+  align-items: center;
+  border-radius: 30%;
+}
+.exchanges a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/* Navigation Bar Styling */
+header {
+  position: sticky;
+  top: 0;
+  height: 10vh;
+  background-color: #000000;
+  z-index: 10000;
+}
+header .wrapper {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo img {
+  height: 50px;
+  display: block;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  transition: left 0.3s;
+}
+.navbar.show {
+  left: 0 !important;
+}
+.hide-scroll {
+  overflow: hidden;
+}
+.navbar ul {
+  all: unset;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.navbar ul a {
+  --s: 0.1em; /* the thickness of the line */
+  --c: #ca27ff; /* the color */
+
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: var(--s);
+  background: linear-gradient(90deg, var(--c) 50%, black 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.7s;
+}
+.navbar ul a:hover {
+  --_p: 100%;
+}
+.navbar ul a {
+  font-family: garamond;
+  cursor: pointer;
+  text-decoration: none;
+}
+.close-nav {
+  text-align: right;
+  margin-bottom: 20px;
+}
+.close-nav button {
+  all: unset;
+  background: #656565;
+  font-size: 42px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 3%;
+  border-radius: 3px;
+  color: #444444;
+}
+.close-nav button:hover {
+  color: #222222;
+  background: #6933b5;
+}
+.menu-bar button {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #909090;
+  height: 50px;
+  width: 50px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.menu-bar i {
+  display: block;
+  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+}
+.menu-bar i::after {
+  display: block;
+  content: "";
+  border-top: 3px solid #010101;
+  margin: 6px 0;
+}
+.menu-bar button:hover {
+  background: #6933b5;
+}
+.menu-bar button:hover i {
+  border-color: #000000;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1100px) {
+  .logo {
+    margin-left: -1%;
+  }
+}
+/* Responsive Design For Crypto Usage Page */
+@media only screen and (max-width: 1100px) {
+  .images img {
+    margin-bottom: 10%;
+  }
+
+  #l3 {
+    margin-top: 0;
+  }
+  #l4 {
+    margin-top: 8%;
+  }
+  #l5 {
+    margin-top: 0%;
+  }
+}
+/* Responsive Design For Ukraine Page */
+@media only screen and (max-width: 900px) {
+  .ukraine-top,
+  .ukraine-bottom {
+    width: 98%;
+    display: block;
+  }
+  .crypto_stat {
+    display: block;
+    width: 70%;
+  }
+  .ukraine-bottom .ukr_chart {
+    display: block;
+    width: 80%;
+    margin-right: 10%;
+  }
+  .world_map {
+    display: block;
+    width: 100%;
+  }
+  .ukraine-top .ukraine-map {
+    clear: both;
+    display: block;
+    width: 90%;
+    height: 30vh;
+    margin-left: 8%;
+    margin-bottom: 25%;
+  }
+  .ukraine-top .text,
+  .ukraine-bottom .text {
+    display: block;
+    margin: 2%;
+    width: 80%;
+    padding: 2%;
+    margin-left: 11%;
+    color: #ffffff;
+    margin-bottom: 4%;
+  }
+
+  .ukraine-bottom {
+    margin-bottom: 55%;
+  }
+  .images img {
+    margin-bottom: 20%;
+  }
+  #l1 {
+    margin-top: 2%;
+  }
+  #l2 {
+    margin-top: 6%;
+  }
+  #l3 {
+    margin-top: 2%;
+  }
+  #l4 {
+    margin-top: 6%;
+  }
+  #l5 {
+    margin-top: -2%;
+  }
+}
+/* Responsive Design For Cryprto Usage Page */
+@media only screen and (max-width: 870px) {
+  .exchanges a {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 5px 5px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .exchanges a img {
+    height: 40px;
+    width: 40px;
+    margin-top: 15%;
+    align-items: center;
+    border-radius: 30%;
+  }
+  .images {
+    float: left;
+
+    display: none;
+  }
+  .description ul {
+    margin-left: 5%;
+  }
+  .description li {
+    margin-top: 8%;
+  }
+  description li p {
+    display: inline-block;
+    margin-top: 20%;
+  }
+  #l1 {
+    margin-top: 4%;
+  }
+  #l2 {
+    margin-top: 4%;
+  }
+  #l3 {
+    margin-top: 0;
+  }
+  #l4 {
+    margin-top: 7%;
+  }
+  #l5 {
+    margin-top: 0;
+  }
+  .description ul {
+    width: 90%;
+  }
+}
+/* Responsive Design For Navigation */
+@media (min-width: 770px) {
+  .navbar {
+    all: unset;
+    display: block;
+  }
+  .navbar ul {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .navbar ul a {
+    font-size: inherit;
+  }
+  .close-nav,
+  .menu-bar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .exchanges a {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 5px 5px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .exchanges a img {
+    height: 40px;
+    width: 40px;
+    margin-top: 15%;
+    align-items: center;
+    border-radius: 30%;
+  }
+  .images {
+    float: left;
+
+    display: none;
+  }
+  .description ul {
+    margin-left: 5%;
+  }
+  .description li {
+    margin-top: 8%;
+  }
+  description li p {
+    display: inline-block;
+    margin-top: 20%;
+  }
+  #l1 {
+    margin-top: 10%;
+  }
+  #l2 {
+    margin-top: 15%;
+  }
+  #l3 {
+    margin-top: 10%;
+  }
+  #l4 {
+    margin-top: 17%;
+  }
+  #l5 {
+    margin-top: 4%;
+  }
+  .description ul {
+    width: 90%;
+  }
+  .heading {
+    font-size: 25px;
+  }
+}
